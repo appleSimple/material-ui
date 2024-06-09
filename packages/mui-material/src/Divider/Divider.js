@@ -149,7 +149,9 @@ const DividerRoot = styled('div', {
       style: {
         '&::before, &::after': {
           width: '100%',
-          borderTop: `thin solid ${(theme.vars || theme).palette.divider}`,
+          borderTopWidth: 'thin',
+          borderTopStyle: 'solid',
+          borderTopColor: (theme.vars || theme).palette.divider,
         },
       },
     },
@@ -159,7 +161,9 @@ const DividerRoot = styled('div', {
         flexDirection: 'column',
         '&::before, &::after': {
           height: '100%',
-          borderLeft: `thin solid ${(theme.vars || theme).palette.divider}`,
+          borderLeftWidth: 'thin',
+          borderLeftStyle: 'solid',
+          borderLeftColor: (theme.vars || theme).palette.divider,
         },
       },
     },
